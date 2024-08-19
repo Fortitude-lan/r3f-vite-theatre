@@ -4,10 +4,11 @@
  * @Author: 
  * @Date: 2024-08-19 09:18:36
  * @LastEditors: Chevalier
- * @LastEditTime: 2024-08-19 15:59:02
+ * @LastEditTime: 2024-08-19 16:00:03
 -->
 # r3f-vite-theatre
-A boilerplate to build R3F projects
+R3F projects + theatre
+使用滚动鼠标穿梭3D场景
 
 ```
 npm
