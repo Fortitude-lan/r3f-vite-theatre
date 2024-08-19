@@ -6,7 +6,6 @@ import * as THREE from 'three'
 import { useControls } from 'leva';
 
 export default function HologramMaterial() {
-    const config = useControls('HOLOGRAM', { color: { value: '#70c1ff' } })
     const HolographicMaterial = shaderMaterial(
         {
             uTime: 0,
@@ -106,7 +105,7 @@ export default function HologramMaterial() {
         // time
         ref.current.uTime += delta
         // color
-        ref.current.uniforms.uColor.value.set(config.color)
+        // ref.current.uniforms.uColor.value.set(config.color)
         // console.log(ref.current)
         // console.log(ref.current.uColor.value)
     })
