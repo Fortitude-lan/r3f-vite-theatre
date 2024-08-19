@@ -1,4 +1,12 @@
-# r3f-vite-starter
+<!--
+ * @Descripttion: 
+ * @version: Chevalier
+ * @Author: 
+ * @Date: 2024-08-19 09:18:36
+ * @LastEditors: Chevalier
+ * @LastEditTime: 2024-08-19 15:59:02
+-->
+# r3f-vite-theatre
 A boilerplate to build R3F projects
 
 ```
@@ -7,4 +15,14 @@ npm run dev
 ```
 
 
-![image](https://user-images.githubusercontent.com/6551176/221732091-23ee52cb-4150-42fa-b998-43628d7a6b0d.png)
+![image](./res.png)
+
+
+# leva threejs >155 , leva .35 需要
+```json
+"overrides": {
+    "leva": {
+      "@radix-ui/react-portal": "1.0.2"
+    }
+  }
+```
