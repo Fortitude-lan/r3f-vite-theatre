@@ -4,9 +4,9 @@
  * @Author: 
  * @Date: 2024-08-19 09:18:36
  * @LastEditors: Chevalier
- * @LastEditTime: 2024-08-19 16:14:07
+ * @LastEditTime: 2024-08-20 23:18:59
  */
-import { useEffect } from "react";
+import { useEffect ,useState} from "react";
 import { useControls } from "leva";
 import { useCurrentSheet, PerspectiveCamera } from "@theatre/r3f";
 import { OrbitControls, useScroll } from "@react-three/drei";
@@ -18,17 +18,17 @@ import { BrittleHollow } from "./Brittle-hollow";
 import Hologram from "./Hologram";
 
 const Scene = () => {
-  const bgMP3 = new Audio("/sounds/bgMusic.ogg");
+  const [audio, setAudio] = useState(new Audio("/sounds/bgMusic.ogg"))
   const sheet = useCurrentSheet()
   const config = useControls({ music: { value: false } })
   const scroll = useScroll()
   useEffect(() => {
-    console.log(config.music)
     if (config.music) {
-      console.log('kai')
-      bgMP3.play()
+      console.log('开')
+      audio.play()
     } else {
-      bgMP3.pause()
+      console.log('关')
+      audio.pause()
     }
   }, [config.music])
 
