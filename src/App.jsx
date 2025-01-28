@@ -1,19 +1,4 @@
-/*
- * @Descripttion: 
- * @version: Chevalier
- * @Author: 
- * @Date: 2024-08-19 09:18:36
- * @LastEditors: Chevalier
- * @LastEditTime: 2024-08-19 15:26:12
- */
-/*
- * @Descripttion: 
- * @version: Chevalier
- * @Author: 
- * @Date: 2024-08-19 09:18:36
- * @LastEditors: Chevalier
- * @LastEditTime: 2024-08-19 11:02:40
- */
+
 import { Canvas } from "@react-three/fiber";
 import Scene from "./components/Scene";
 
